@@ -23,7 +23,7 @@ const Navibar = () => {
             style={{ maxHeight: '160px' }}
             navbarScroll
           >
-            <Nav.Link href="/soc">Home</Nav.Link>
+            <Nav.Link href="/soc">Schedule of Classes</Nav.Link>
             <Nav.Link href="/studentaccess">Student Access</Nav.Link>
             <Nav.Link href="/webreg">WebReg</Nav.Link>
             <Nav.Link href="/index">Site Index</Nav.Link>
