@@ -6,35 +6,6 @@ import logout from "../../assets/image/logout.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navibar = () => {
-//   return (
-//     <Navbar className="navbar-body" collapseOnSelect expand="lg" variant="dark">
-//       <Container>
-//       <Navbar.Brand href="/">
-//         <img
-//           src={uci_logo}
-//           height="40"
-//           className="d-inline-block align-top navbar-logo"
-//           alt="UCI Logo"
-//         />
-//         <span className="navbar-title">UCI Home</span>
-//       </Navbar.Brand>
-//       <Navbar.Collapse id="responsive-navbar-nav me-auto">
-//         <Nav className="me-auto navbar-link">
-//           <Nav.Link href="/soc">Schedule of Classes</Nav.Link>
-//           <Nav.Link href="/studentaccess">Student Access</Nav.Link>
-//           <Nav.Link href="/webreg">WebReg</Nav.Link>
-//           <Nav.Link href="/siteindex">Site Index</Nav.Link>
-//           <Container className="navbar-logout">
-//             <Nav.Link href="/logout">
-//               <img src={logout} alt="logout" width={70}/>
-//             </Nav.Link>
-//           </Container>
-//         </Nav>
-//       </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// };
   return (
     <Navbar expand="lg" className="navbar-body" collapseOnSelect>
       <Container fluid>
