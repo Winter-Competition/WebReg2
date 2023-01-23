@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navibar = () => {
   return (
-    <Navbar expand="lg" className="navbar-body" collapseOnSelect>
+    <Navbar expand="md" className="navbar-body" collapseOnSelect>
       <Container fluid>
         <Navbar.Brand href="/">
         <img
@@ -20,7 +20,7 @@ const Navibar = () => {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto"
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: '160px' }}
             navbarScroll
           >
             <Nav.Link href="/soc">Home</Nav.Link>
