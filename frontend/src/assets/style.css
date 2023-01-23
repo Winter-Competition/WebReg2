@@ -1,0 +1,27 @@
+.navbar-body {
+    z-index: 999;
+    background: #121e12;
+    padding: 10px 100px 10px 20px;
+  }
+  .navbar-brand {
+    margin-right: 50px;
+  }
+  .navbar-logo {
+    margin-right: 16px;
+  }
+  .navbar-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #d57a4b;
+  }
+  .nav-link {
+    color: #f1f3f4 !important;
+    margin-right: 6px;
+  }
+  .nav-link:hover {
+    font-weight: 600 !important;
+    text-decoration: underline;
+    text-decoration-color: #f9d4a3;
+    text-decoration-thickness: 3px;
+  }
