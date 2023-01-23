@@ -4,6 +4,7 @@
     padding: 3px 20px 3px 3px !important;
     text-align: left;
     box-shadow: 0px 2px 5px rgba(195, 195, 195, 0.7);
+    /* position:relative */
   }
   .navbar-brand {
     margin-right: 50px;
@@ -15,14 +16,21 @@
   }
   .nav-link {
     /* font-family: 'Inter'; */
+
     font-weight: 500 !important;
     color: #000000 !important;
+    background-color: rgba(95, 95, 95, 0.0);
     border-bottom: #000000;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    max-width: 170px;
+    border-radius: 5px;
+    transition: font-weight 3s ease-in !important;
   }
+
   .nav-link:hover {
-    font-weight: 800 !important;
+    font-weight: bold !important;
     text-decoration: underline;
     text-decoration-color: #0048ff;
     text-decoration-thickness: 3px;
+    background-color: rgba(117, 117, 117, 0.05);
   }

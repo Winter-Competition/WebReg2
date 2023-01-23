@@ -15,7 +15,7 @@ const Navibar = () => {
           height="40"
           className="d-inline-block navbar-logo"
           alt="UCI Logo"
-        />UCI Home</Navbar.Brand>
+        />UCI Registrar</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
