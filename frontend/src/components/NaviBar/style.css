@@ -1,0 +1,28 @@
+.navbar-body {
+    z-index: 999;
+    background: #ffffff;
+    padding: 3px 20px 3px 3px !important;
+    text-align: left;
+    box-shadow: 0px 2px 5px rgba(195, 195, 195, 0.7);
+  }
+  .navbar-brand {
+    margin-right: 50px;
+    font-weight: 500 !important;
+  }
+  .navbar-logo {
+    margin-right: 20px;
+    align-self: auto;
+  }
+  .nav-link {
+    /* font-family: 'Inter'; */
+    font-weight: 500 !important;
+    color: #000000 !important;
+    border-bottom: #000000;
+    margin-left: 20px;
+  }
+  .nav-link:hover {
+    font-weight: 800 !important;
+    text-decoration: underline;
+    text-decoration-color: #0048ff;
+    text-decoration-thickness: 3px;
+  }
