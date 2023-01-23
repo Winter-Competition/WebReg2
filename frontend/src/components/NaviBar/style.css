@@ -1,0 +1,32 @@
+.navbar-body {
+    z-index: 999;
+    background: #ffffff;
+    padding: 10px 100px 10px 20px;
+    text-align: left;
+    box-shadow: 0px 3px 5px rgba(195, 195, 195, 0.7);
+  }
+  .navbar-brand {
+    margin-right: 50px;
+  }
+  .navbar-logo {
+    margin-right: 10px;
+  }
+  .navbar-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: #000000;
+  }
+  .nav-link {
+    color: #000000 !important;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+    left: 20px;
+  }
+  .nav-link:hover {
+    font-weight: 600 !important;
+    text-decoration: underline;
+    text-decoration-color: #0048ff;
+    text-decoration-thickness: 3px;
+  }
