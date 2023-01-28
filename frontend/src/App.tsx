@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NaviBar from "./components/NaviBar";
 import Home from "./pages/Home";
+import WebReg from "./pages/Webreg";
+import CheckOut from "./pages/CheckOut";
 
 function App() {
   return (
@@ -11,9 +13,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/project" element={<Project />} />
-          <Route path="/member" element={<Member />} />
-          <Route path="/board" element={<Board />} /> */}
+          <Route path="/webreg" element={<WebReg />} />
+          <Route path="/checkout" element={<CheckOut />} />
         </Routes>
       </Router>
     </div>

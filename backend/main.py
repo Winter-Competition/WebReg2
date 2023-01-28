@@ -9,7 +9,7 @@ from websoc import webSocAPI, getYear
 
 app = FastAPI(docs_url='/swagger')
 
-origins = ["http://localhost:3000"]
+origins = ["*"]
 
 app.add_middleware(
      CORSMiddleware, 

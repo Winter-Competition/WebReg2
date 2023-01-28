@@ -26,7 +26,7 @@ const Navibar = () => {
             <Nav.Link href="/soc">Schedule of Classes</Nav.Link>
             <Nav.Link href="/studentaccess">Student Access</Nav.Link>
             <Nav.Link href="/webreg">WebReg</Nav.Link>
-            <Nav.Link href="/checkout">Site Index</Nav.Link>
+            <Nav.Link href="/index">Site Index</Nav.Link>
           </Nav>
            <Nav.Link href="/logout">
             <img src={logout} alt="logout_png">
