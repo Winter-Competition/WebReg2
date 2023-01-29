@@ -1,40 +1,41 @@
 import * as React from "react";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logout from "../../assets/image/logout.png";
 
-const class_code = "35630"
-const class_days = "Tu/Th"
-const time_start = "9:30"
-const time_end = "10:50"
-const am_pm = "AM"
-const building = "EH 1200"
+const class_code = "35630";
+const class_days = "Tu/Th";
+const time_start = "9:30";
+const time_end = "10:50";
+const am_pm = "AM";
+const building = "EH 1200";
 
+const testing = [{code: "Class 1"}, {code: "Class 2"}, {code: "Class 3"}, {code: "Class 4"}];
 
-const ClassCart = () => {
-  const [show, setShow] = useState(false);
+const CourseCards = () => {
+    const [courses, changeCourses] = useState<any[]>([]);
+    const [numCourses, changeNumCourses] = useState(0)
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  return (
+    return (
     <>
-      <Button variant="link" onClick={handleShow}>
-        <img src={logout} alt="logout_logo"></img>
+      <Button variant="primary" onClick={ () => {changeNumCourses(numCourses+1)}}>
+        Button 1
       </Button>
-
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header closeButton>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          This where cards should go
-        </Offcanvas.Body>
-      </Offcanvas>
+      <Button variant="primary" onClick={ () => {changeCourses([...courses, testing[numCourses]])}}>
+      {/* <Button variant="secondary" onClick={ () => {changeCourses(courses.push("Class 4"))}}> */}
+        Button 2
+      </Button>
+      <h3>
+        {
+            courses.map((course) => {
+                return (<p>{course.code}</p>)
+            })
+        }
+      </h3>
     </>
-  );
+    );
 }
 
-export default ClassCart;
+export default CourseCards;

@@ -5,6 +5,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logout from "../../assets/image/logout.png";
+import CourseCards from "../Cards";
 
 const ClassCart = () => {
   const [show, setShow] = useState(false);
@@ -22,7 +23,7 @@ const ClassCart = () => {
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          This where cards should go
+          <CourseCards/>
         </Offcanvas.Body>
       </Offcanvas>
     </>
