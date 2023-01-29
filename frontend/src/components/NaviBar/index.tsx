@@ -1,9 +1,10 @@
 import * as React from "react";
-import { Navbar, Nav,Container } from "react-bootstrap";
+import { Navbar, Nav,Container, Button } from "react-bootstrap";
 import "./style.css";
 import uci_logo from "../../assets/image/uci_logo.png";
 import logout from "../../assets/image/logout.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ClassCart from "../../components/Cart";
 
 const Navibar = () => {
   return (
@@ -28,11 +29,12 @@ const Navibar = () => {
             <Nav.Link href="/webreg">WebReg</Nav.Link>
             <Nav.Link href="/checkout">Site Index</Nav.Link>
           </Nav>
+          {/* this is the cart */}
+          <ClassCart/>
            <Nav.Link href="/logout">
             <img src={logout} alt="logout_png">
             </img>
             </Nav.Link>
-            {/* <Button variant="outline-dark btn-sm">Logout</Button> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
