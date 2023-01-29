@@ -19,10 +19,13 @@ const ClassCart = () => {
         <img src={viewCart} alt="logout_logo" width={105}></img>
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose} placement="end">
+      <Offcanvas show={show} onHide={handleClose} placement="end" className="canvas-body">
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>
         <Offcanvas.Body>
+          <h1 className="cart-title">
+            Cart
+          </h1>
           <CourseCards/>
         </Offcanvas.Body>
       </Offcanvas>

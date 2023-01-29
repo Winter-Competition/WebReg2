@@ -3,3 +3,9 @@
     width: 112px;
     height: 38px;
   }
+.canvas-body{
+  width: 300px !important;
+}
+.cart-title{
+  text-align: center;
+}
