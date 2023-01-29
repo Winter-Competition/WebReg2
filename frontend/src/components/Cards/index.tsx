@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from 'react-bootstrap/Card';
+import Form from 'react-bootstrap/Form';
 
 const availableColors = ["#BBAEBD", "#EDBE7E", "#D8918E", "#A7BCB9", "#E67976", "#CBADEF"];
 
@@ -51,19 +52,18 @@ const CourseCards = () => {
     const [numCourses, changeNumCourses] = useState(0)
     return (
     <>
-      {/* <Button variant="primary" onClick={ () => {changeNumCourses(numCourses+1)}}>
-        Button 1
-      </Button>
-      <Button variant="primary" onClick={ () => {changeCourses([...courses, testing[numCourses]])}}>
-        Button 2
-      </Button> */}
-      <h3>
+      <div className="gray-padding">
+        <div className="white-padding">
         {
             courses.map((course) => {
                 return (<p>{courseCardComp(course)}</p>)
             })
         }
-      </h3>
+        </div>
+        <Form>
+          <Button variant= "success" type="submit" className="register-button">Register</Button>
+        </Form>
+      </div>
     </>
     );
 }
