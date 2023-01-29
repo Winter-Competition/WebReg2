@@ -1,14 +1,17 @@
 import * as React from "react";
-import { Navbar, Nav,Container } from "react-bootstrap";
+
+import {Navbar, Nav,Container } from "react-bootstrap";
+
 import "./style.css";
 import uci_logo from "../../assets/image/uci_logo.png";
 import logout from "../../assets/image/logout.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Navibar = () => {
+const Calendar = () => {
   return (
     <Navbar expand="md" className="navbar-body" collapseOnSelect>
       <Container fluid>
+
         <Navbar.Brand href="/">
         <img
           src={uci_logo}
@@ -34,9 +37,11 @@ const Navibar = () => {
             </Nav.Link>
             {/* <Button variant="outline-dark btn-sm">Logout</Button> */}
         </Navbar.Collapse>
+        
       </Container>
     </Navbar>
+    
   );
 };
 
-export default Navibar;
+export default Calendar;
