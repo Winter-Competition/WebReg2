@@ -52,7 +52,6 @@ const CourseCards = () => {
     const [numCourses, changeNumCourses] = useState(0)
     return (
     <>
-      <div className="gray-padding">
         <div className="white-padding">
         {
             courses.map((course) => {
@@ -63,7 +62,6 @@ const CourseCards = () => {
         <Form>
           <Button variant= "success" type="submit" className="register-button">Register</Button>
         </Form>
-      </div>
     </>
     );
 }
