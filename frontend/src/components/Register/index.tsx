@@ -11,13 +11,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import calendar_logo from "../../assets/image/calendar_logo.svg";
 import double_arrow from "../../assets/image/down-arrow.png";
 import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const RegisterForm = () => {
   const [open, setOpen] = useState(true);
   return (
-  
-          
-        
     <Form className="register-body">
       <Collapse in={open}>
         <div className="register-body-collapse">
@@ -57,13 +56,18 @@ const RegisterForm = () => {
           <InputGroup.Text id="basic-addon1" className="field-height">Course Number</InputGroup.Text>
           <Form.Control placeholder="Ex: H2A, 5, 10-20" />
         </InputGroup>
-
-        <Button variant="secondary" className="button-1 mt-4 mb-4">
-          Submit
-        </Button>
-        <Button variant="success" className="submit-button button-2 mt-4 mb-4" onClick={() => setOpen(!open)} aria-controls="collapse" aria-expanded={open}>
-          Submit
-        </Button>
+        <Row>
+          <Col xs={6}>
+          <Button variant="secondary" className="button-1 mt-4 mb-4">
+            Reset
+          </Button>
+          </Col>
+          <Col xs={6}>
+          <Button variant="success" className="button-2 mt-4 mb-4" onClick={() => setOpen(!open)} aria-controls="collapse" aria-expanded={open}>
+            Submit
+          </Button>
+          </Col>
+        </Row>
 
         </div>
         
@@ -80,7 +84,7 @@ const RegisterForm = () => {
           </div>
           
           <div className="collapsed-return-box" onClick={() => setOpen(!open)} aria-controls="collapse" aria-expanded={open} >
-            <img id="doubleDown" src={double_arrow} ></img>
+            <img id="doubleDown" src={double_arrow} alt="double-arrow" ></img>
           </div>
           <div className='schedule-of-classes'>
           <Table className="soc" bordered hover>

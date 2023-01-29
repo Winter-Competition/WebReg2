@@ -1,46 +1,234 @@
 import * as React from "react";
-
-import {Navbar, Nav,Container } from "react-bootstrap";
-
 import "./style.css";
-import uci_logo from "../../assets/image/uci_logo.png";
-import logout from "../../assets/image/logout.png";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Calendar = () => {
+  // function(hello){
+  //   console.log("hi")
+  // }
   return (
-    <Navbar expand="md" className="navbar-body" collapseOnSelect>
-      <Container fluid>
+    <div className="calendar">
+      <div className="outer">
+      <table>
+      <thead>
+        <tr>
+          <th className="headcol"></th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+        </tr>
+      </thead>
+      </table>
 
-        <Navbar.Brand href="/">
-        <img
-          src={uci_logo}
-          height="40"
-          className="d-inline-block navbar-logo"
-          alt="UCI Logo"
-        />UCI Registrar</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto"
-            style={{ maxHeight: '160px' }}
-            navbarScroll
-          >
-            <Nav.Link href="/soc">Schedule of Classes</Nav.Link>
-            <Nav.Link href="/studentaccess">Student Access</Nav.Link>
-            <Nav.Link href="/webreg">WebReg</Nav.Link>
-            <Nav.Link href="/index">Site Index</Nav.Link>
-          </Nav>
-           <Nav.Link href="/logout">
-            <img src={logout} alt="logout_png">
-            </img>
-            </Nav.Link>
-            {/* <Button variant="outline-dark btn-sm">Logout</Button> */}
-        </Navbar.Collapse>
-        
-      </Container>
-    </Navbar>
-    
+    <div className="wrap"> 
+      <table className="offset">
+      <tbody>
+        <tr>
+          <td className="headcol">8:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><div className="event double"><input id="check" type="checkbox" className="checkbox" /><label htmlFor="check"></label>8:30–9:30 Yoga</div></td>
+        </tr>
+        <tr>
+          <td className="headcol">9:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">10:00</td>
+          <td></td>
+          <td></td>
+          <td><div className="event double"><input id="check" type="checkbox" className="checkbox" /><label htmlFor="check"></label>10:00–11:00 Meeting</div></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">11:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">12:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">13:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">14:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">15:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">16:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">17:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">18:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">19:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td className="headcol">20:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
   );
 };
 
