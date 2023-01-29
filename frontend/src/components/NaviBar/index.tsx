@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Navbar, Nav,Container, Button } from "react-bootstrap";
+import { Navbar, Nav,Container} from "react-bootstrap";
 import "./style.css";
 import uci_logo from "../../assets/image/uci_logo.png";
-import logout from "../../assets/image/logout.png";
+import logout from "../../assets/image/logout.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ClassCart from "../../components/Cart";
 
@@ -31,10 +31,10 @@ const Navibar = () => {
           </Nav>
           {/* this is the cart */}
           <ClassCart/>
-           <Nav.Link href="/logout">
-            <img src={logout} alt="logout_png">
+          <Nav.Link href="/logout" className="test">
+            <img src={logout} alt="logout_png" height={44}>
             </img>
-            </Nav.Link>
+          </Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

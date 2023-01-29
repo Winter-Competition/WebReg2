@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logout from "../../assets/image/logout.png";
+import viewCart from "../../assets/image/viewCart.svg";
 import CourseCards from "../Cards";
 
 const ClassCart = () => {
@@ -15,14 +15,17 @@ const ClassCart = () => {
 
   return (
     <>
-      <Button variant="link" onClick={handleShow}>
-        <img src={logout} alt="logout_logo"></img>
+      <Button variant="dark" className="cart-button" onClick={handleShow}>
+        <img src={viewCart} alt="logout_logo" width={105}></img>
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose} placement="end">
+      <Offcanvas show={show} onHide={handleClose} placement="end" className="canvas-body">
         <Offcanvas.Header closeButton>
         </Offcanvas.Header>
         <Offcanvas.Body>
+          <h1 className="cart-title">
+            Cart
+          </h1>
           <CourseCards/>
         </Offcanvas.Body>
       </Offcanvas>
