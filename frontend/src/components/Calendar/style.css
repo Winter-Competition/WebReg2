@@ -105,7 +105,6 @@
   }
   
   .event {
-    background: #00B4FC;
     color: white;
     border-radius: 2px;
     text-align: left;
@@ -114,5 +113,4 @@
     padding: 0.2rem;
     overflow-x: hidden;
     /* Soon to change */
-    height: 200%;
   }
