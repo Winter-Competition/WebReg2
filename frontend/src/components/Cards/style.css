@@ -1,0 +1,46 @@
+.card-body{
+    border-color: white;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(113, 113, 113, 0.7);
+}
+.remove-button{
+    height: 20px;
+    font-size: 13px;
+    width: 20px;
+    padding: 0px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    border-radius: 50%;
+
+}
+.card-title{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    font-weight: 600;
+}
+.card-text{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.card-color{
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+.gray-padding{
+    padding: 20px;
+    background-color: gray;
+    padding-bottom: 80px;
+}
+.white-padding{
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+}
+.register-button{
+    margin-top: 40px;
+    width: 120px;
+    height: 40px;
+    margin-left: 30%;
+}
